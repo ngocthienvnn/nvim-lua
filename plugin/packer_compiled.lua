@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
-  chadtree = {
-    loaded = true,
-    path = "/home/thien/.local/share/nvim/site/pack/packer/start/chadtree",
-    url = "https://github.com/ms-jpq/chadtree"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -118,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-spectre",
     url = "https://github.com/windwp/nvim-spectre"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

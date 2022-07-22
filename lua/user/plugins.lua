@@ -50,9 +50,11 @@ return packer.startup(function(use)
 
   -- file manager
   use {
-    "ms-jpq/chadtree",
-    branch = "chad",
-    run =  "python3 -m chadtree deps"
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

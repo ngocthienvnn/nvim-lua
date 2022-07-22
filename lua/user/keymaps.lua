@@ -23,6 +23,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- split windows
+keymap("n", "vv", "<C-w>v", opts)
+keymap("n", "ss", "<C-w>s", opts)
+
 -- fzf lua
 keymap("n", "<Leader>t", ":lua require('fzf-lua').files()<CR>", opts)
 keymap("n", "<Leader>b", ":lua require('fzf-lua').buffers()<CR>", opts)
@@ -33,4 +37,7 @@ keymap("n", "<Space>a", ":lua require('fzf-lua').diagnostics_document()<CR>", op
 keymap("n", "<Leader>S", ":lua require('spectre').open()<CR>", opts)
 keymap("n", "<Leader>sw", ":lua require('spectre').open_visual({select_word=true})<CR>", opts)
 keymap("v", "<Leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)
+
+--- nvim-tree
+keymap('n', "<C-\\>", "<cmd>:NvimTreeToggle<CR>", opts)
 
