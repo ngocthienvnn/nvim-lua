@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["darkplus.nvim"] = {
+  edge = {
     loaded = true,
-    path = "/home/thien/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/lunarvim/darkplus.nvim"
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
   },
   fzf = {
     loaded = true,
