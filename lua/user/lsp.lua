@@ -1,4 +1,3 @@
-local nvim_lsp = require('lspconfig')
 vim.g.coq_settings = {
   auto_start = true,
   display = {pum  = {fast_close = false}},
@@ -44,7 +43,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   vim.keymap.set('n', '<space>wl', function()
@@ -71,13 +70,26 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 local lspconfig = require('lspconfig')
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = {'tsserver', 'intelephense' }
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-     on_attach = on_attach,
-    capabilities = capabilities,
+
+-- PHP
+lspconfig['intelephense'].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    intelephense = {
+      diagnostics = {
+         undefinedTypes = false
+      }
+    }
   }
-end
+}
+
+-- tsserver
+lspconfig['tsserver'].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 -- luasnip setup
 local luasnip = require 'luasnip'
 -- nvim-cmp setup

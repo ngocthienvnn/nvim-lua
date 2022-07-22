@@ -3,5 +3,5 @@ require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
 require "user.lsp"
--- require("user.nvim-tree")
+require "user.built_ins"
 require "user.impatient"
