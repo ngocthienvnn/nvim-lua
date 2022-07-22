@@ -66,6 +66,7 @@ return packer.startup(function(use)
       vim.cmd [[
         hi! Normal guifg=#769ca5
         hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
+        hi! Search  guifg=#d8cf7e guibg=#224e54 gui=bold
       ]]
     end
   } 
