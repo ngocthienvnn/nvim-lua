@@ -54,7 +54,10 @@ return packer.startup(function(use)
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    tag = 'nightly',
+    config = function ()
+      require("nvim-tree").setup()
+    end
   }
   -- Colorschemes
   use "sainnhe/edge"
@@ -68,13 +71,47 @@ return packer.startup(function(use)
   use { 'junegunn/fzf', run = './install --bin', }
   use { 'ibhagwan/fzf-lua',
   -- optional for icon support
-  requires = { 'kyazdani42/nvim-web-devicons' }
+  requires = { 'kyazdani42/nvim-web-devicons' },
+      config = function ()
+        preview_opts = 'hidden'
+    end
+
 }
 
   -- Search text 
   use "windwp/nvim-spectre"
 
-  -- Git
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+  }
+  -- indent line 
+  use "lukas-reineke/indent-blankline.nvim"
+
+  -- comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+
+  -- lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    config = function ()
+      require('lualine').setup({
+        sections = {
+          lualine_b = {'diff', 'diagnostics'},
+        },
+        options = {
+          theme = 'everforest'
+        }
+      });
+    end
+  }
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
