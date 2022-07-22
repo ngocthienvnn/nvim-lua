@@ -96,10 +96,15 @@ _G.packer_plugins = {
     url = "https://github.com/junegunn/fzf"
   },
   ["fzf-lua"] = {
-    config = { "\27LJ\2\n'\0\0\1\0\2\0\3'\0\0\0007\0\1\0K\0\1\0\17preview_opts\vhidden\0" },
+    config = { "\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0" },
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/fzf-lua",
     url = "https://github.com/ibhagwan/fzf-lua"
+  },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -126,6 +131,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-solarized-lua"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua",
+    url = "https://github.com/ishan9299/nvim-solarized-lua"
   },
   ["nvim-spectre"] = {
     loaded = true,
@@ -166,14 +176,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: fzf-lua
-time([[Config for fzf-lua]], true)
-try_loadstring("\27LJ\2\n'\0\0\1\0\2\0\3'\0\0\0007\0\1\0K\0\1\0\17preview_opts\vhidden\0", "config", "fzf-lua")
-time([[Config for fzf-lua]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -182,6 +184,14 @@ time([[Config for Comment.nvim]], false)
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\n›\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\foptions\1\0\1\ntheme\15everforest\rsections\1\0\0\14lualine_b\1\0\0\1\3\0\0\tdiff\16diagnostics\nsetup\flualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: fzf-lua
+time([[Config for fzf-lua]], true)
+try_loadstring("\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0", "config", "fzf-lua")
+time([[Config for fzf-lua]], false)
 if should_profile then save_profiles() end
 
 end)

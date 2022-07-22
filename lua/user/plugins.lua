@@ -60,7 +60,9 @@ return packer.startup(function(use)
     end
   }
   -- Colorschemes
+  use "ishan9299/nvim-solarized-lua"
   use "sainnhe/edge"
+  use ({ 'projekt0n/github-nvim-theme' })
 
   -- lsp
   use "neovim/nvim-lspconfig"
@@ -73,7 +75,9 @@ return packer.startup(function(use)
   -- optional for icon support
   requires = { 'kyazdani42/nvim-web-devicons' },
       config = function ()
-        preview_opts = 'hidden'
+        require('fzf-lua').setup{
+          preview_opts = 'hidden'
+        }
     end
 
 }

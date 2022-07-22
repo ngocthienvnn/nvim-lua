@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme edge
+  colorscheme solarized-flat
   set background=dark
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
