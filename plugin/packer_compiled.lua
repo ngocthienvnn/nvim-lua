@@ -80,15 +80,20 @@ _G.packer_plugins = {
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  edge = {
+  cmp_luasnip = {
     loaded = true,
-    path = "/home/thien/.local/share/nvim/site/pack/packer/start/edge",
-    url = "https://github.com/sainnhe/edge"
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   fzf = {
     loaded = true,
@@ -96,15 +101,10 @@ _G.packer_plugins = {
     url = "https://github.com/junegunn/fzf"
   },
   ["fzf-lua"] = {
-    config = { "\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0" },
+    config = { "\27LJ\2\ný\3\0\0\5\0\"\0%6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\0035\4\31\0=\4 \3=\3!\2B\0\2\1K\0\1\0\15fzf_colors\vborder\1\3\0\0\abg\vNormal\vgutter\1\3\0\0\abg\vNormal\vheader\1\3\0\0\afg\fComment\fspinner\1\3\0\0\afg\nLabel\vmarker\1\3\0\0\afg\fKeyword\fpointer\1\3\0\0\afg\14Exception\vprompt\1\3\0\0\afg\16Conditional\tinfo\1\3\0\0\afg\fPreProc\bhl+\1\3\0\0\afg\14Statement\bbg+\1\3\0\0\abg\15CursorLine\bfg+\1\3\0\0\afg\vNormal\ahl\1\3\0\0\afg\fComment\abg\1\3\0\0\abg\vNormal\afg\1\0\0\1\3\0\0\afg\15CursorLine\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0" },
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/fzf-lua",
     url = "https://github.com/ibhagwan/fzf-lua"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/thien/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -112,6 +112,7 @@ _G.packer_plugins = {
     url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["indent-blankline.nvim"] = {
+    config = { "\27LJ\2\nN\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tchar\bâ”Š\nsetup\21indent_blankline\frequire\0" },
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
@@ -121,6 +122,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -133,6 +140,7 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-solarized-lua"] = {
+    config = { "\27LJ\2\nŠ\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0k        hi! Normal guifg=#769ca5\n        hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940\n      \bcmd\bvim\0" },
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua",
     url = "https://github.com/ishan9299/nvim-solarized-lua"
@@ -176,22 +184,34 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n›\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\foptions\1\0\1\ntheme\15everforest\rsections\1\0\0\14lualine_b\1\0\0\1\3\0\0\tdiff\16diagnostics\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\nN\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tchar\bâ”Š\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
+-- Config for: nvim-solarized-lua
+time([[Config for nvim-solarized-lua]], true)
+try_loadstring("\27LJ\2\nŠ\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0k        hi! Normal guifg=#769ca5\n        hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940\n      \bcmd\bvim\0", "config", "nvim-solarized-lua")
+time([[Config for nvim-solarized-lua]], false)
+-- Config for: fzf-lua
+time([[Config for fzf-lua]], true)
+try_loadstring("\27LJ\2\ný\3\0\0\5\0\"\0%6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\0035\4\31\0=\4 \3=\3!\2B\0\2\1K\0\1\0\15fzf_colors\vborder\1\3\0\0\abg\vNormal\vgutter\1\3\0\0\abg\vNormal\vheader\1\3\0\0\afg\fComment\fspinner\1\3\0\0\afg\nLabel\vmarker\1\3\0\0\afg\fKeyword\fpointer\1\3\0\0\afg\14Exception\vprompt\1\3\0\0\afg\16Conditional\tinfo\1\3\0\0\afg\fPreProc\bhl+\1\3\0\0\afg\14Statement\bbg+\1\3\0\0\abg\15CursorLine\bfg+\1\3\0\0\afg\vNormal\ahl\1\3\0\0\afg\fComment\abg\1\3\0\0\abg\vNormal\afg\1\0\0\1\3\0\0\afg\15CursorLine\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0", "config", "fzf-lua")
+time([[Config for fzf-lua]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: fzf-lua
-time([[Config for fzf-lua]], true)
-try_loadstring("\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0", "config", "fzf-lua")
-time([[Config for fzf-lua]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n›\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\foptions\1\0\1\ntheme\15everforest\rsections\1\0\0\14lualine_b\1\0\0\1\3\0\0\tdiff\16diagnostics\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

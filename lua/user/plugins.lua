@@ -60,14 +60,22 @@ return packer.startup(function(use)
     end
   }
   -- Colorschemes
-  use "ishan9299/nvim-solarized-lua"
-  use "sainnhe/edge"
-  use ({ 'projekt0n/github-nvim-theme' })
+  use {
+    "ishan9299/nvim-solarized-lua",
+    config = function ()
+      vim.cmd [[
+        hi! Normal guifg=#769ca5
+        hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
+      ]]
+    end
+  } 
 
   -- lsp
   use "neovim/nvim-lspconfig"
   use "hrsh7th/nvim-cmp"
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
   
 
   use { 'junegunn/fzf', run = './install --bin', }
@@ -76,7 +84,23 @@ return packer.startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons' },
       config = function ()
         require('fzf-lua').setup{
-          preview_opts = 'hidden'
+          preview_opts = 'hidden',
+          fzf_colors = {
+            ['fg'] = { 'fg', 'CursorLine' },
+            ['bg'] = { 'bg', 'Normal' },
+            ['hl'] = { 'fg', 'Comment' },
+            ['fg+'] = { 'fg', 'Normal' },
+            ['bg+'] = { 'bg', 'CursorLine' },
+            ['hl+'] = { 'fg', 'Statement' },
+            ['info'] = { 'fg', 'PreProc' },
+            ['prompt'] = { 'fg', 'Conditional' },
+            ['pointer'] = { 'fg', 'Exception' },
+            ['marker'] = { 'fg', 'Keyword' },
+            ['spinner'] = { 'fg', 'Label' },
+            ['header'] = { 'fg', 'Comment' },
+            ['gutter'] = { 'bg', 'Normal' },
+            ['border'] = { 'bg', 'Normal' },
+          },
         }
     end
 
@@ -91,7 +115,15 @@ return packer.startup(function(use)
         run = ':TSUpdate'
   }
   -- indent line 
-  use "lukas-reineke/indent-blankline.nvim"
+  use {
+  "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      require('indent_blankline').setup({
+        char = "┊",
+      })
+    end
+
+  } 
 
   -- comment
   use {
@@ -115,6 +147,12 @@ return packer.startup(function(use)
         }
       });
     end
+  }
+
+  -- Auto pair plugin
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
   }
   
   -- Automatically set up your configuration after cloning packer.nvim
