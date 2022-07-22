@@ -89,6 +89,16 @@ _G.packer_plugins = {
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
+  fzf = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -103,6 +113,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/windwp/nvim-spectre"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

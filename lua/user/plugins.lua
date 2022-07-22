@@ -64,6 +64,14 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   
 
+  use { 'junegunn/fzf', run = './install --bin', }
+  use { 'ibhagwan/fzf-lua',
+  -- optional for icon support
+  requires = { 'kyazdani42/nvim-web-devicons' }
+}
+
+  -- Search text 
+  use "windwp/nvim-spectre"
 
   -- Git
   
