@@ -42,5 +42,9 @@ keymap("n", "<Leader>sw", ":lua require('spectre').open_visual({select_word=true
 keymap("v", "<Leader>s", "<esc>:lua require('spectre').open_visual()<CR>", opts)
 
 --- nvim-tree
-keymap('n', "<C-\\>", "<cmd>:NvimTreeToggle<CR>", opts)
+keymap('n', "<C-\\>", "<cmd>:NvimTreeFindFileToggle<CR>", opts)
+
+--- show diagnostic at current line
+keymap("n", "<Leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>", opts)
+
 

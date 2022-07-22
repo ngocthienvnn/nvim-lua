@@ -56,7 +56,12 @@ return packer.startup(function(use)
     },
     tag = 'nightly',
     config = function ()
-      require("nvim-tree").setup()
+      require("nvim-tree").setup({
+        view = {
+          width = 40,
+          height = 40,
+        }
+      })
     end
   }
   -- Colorschemes
@@ -67,6 +72,22 @@ return packer.startup(function(use)
         hi! Normal guifg=#769ca5
         hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
         hi! Search  guifg=#d8cf7e guibg=#224e54 gui=bold
+
+        highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
+        " blue
+        highlight! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
+        highlight! CmpItemAbbrMatchFuzzy guibg=NONE guifg=#569CD6
+        " light blue
+        highlight! CmpItemKindVariable guibg=NONE guifg=#9CDCFE
+        highlight! CmpItemKindInterface guibg=NONE guifg=#9CDCFE
+        highlight! CmpItemKindText guibg=NONE guifg=#9CDCFE
+        " pink
+        highlight! CmpItemKindFunction guibg=NONE guifg=#C586C0
+        highlight! CmpItemKindMethod guibg=NONE guifg=#C586C0
+        " front
+        highlight! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
+        highlight! CmpItemKindProperty guibg=NONE guifg=#D4D4D4
+        highlight! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
       ]]
     end
   } 
