@@ -60,27 +60,10 @@ return packer.startup(function(use)
 
   -- lsp
   use "neovim/nvim-lspconfig"
-  -- use "hrsh7th/nvim-cmp"
-  -- use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-  use {
-    "ms-jpq/coq_nvim",
-    branch = "coq"
-  }
+  use "hrsh7th/nvim-cmp"
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   
 
-
-  -- files searching
-  -- use "ibhagwan/fzf-lua"
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
-  use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
   
