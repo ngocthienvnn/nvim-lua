@@ -82,11 +82,7 @@ return packer.startup(function(use)
   -- Search text 
   use "windwp/nvim-spectre"
 
-  -- Treesitter
-  use {
-    'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-  }
+  use "sheerun/vim-polyglot"
   -- indent line 
   use { "lukas-reineke/indent-blankline.nvim" } 
 
