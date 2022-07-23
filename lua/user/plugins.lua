@@ -55,48 +55,14 @@ return packer.startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
     tag = 'nightly',
-    config = function ()
-      require("nvim-tree").setup({
-        view = {
-          width = 40,
-          height = 40,
-        }
-      })
-    end
   }
   -- Colorschemes
-  use({
-  'projekt0n/github-nvim-theme',
-  config = function()
-    require('github-theme').setup({
-    })
-  end
-})
+  use {
+    "jsit/toast.vim",
+  }
+  use "sainnhe/everforest"
   use {
     "ishan9299/nvim-solarized-lua",
-    config = function ()
-      vim.cmd [[
-        hi! Normal guifg=#769ca5
-        hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
-        hi! Search  guifg=#d8cf7e guibg=#224e54 gui=bold
-
-        highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
-        " blue
-        highlight! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
-        highlight! CmpItemAbbrMatchFuzzy guibg=NONE guifg=#569CD6
-        " light blue
-        highlight! CmpItemKindVariable guibg=NONE guifg=#9CDCFE
-        highlight! CmpItemKindInterface guibg=NONE guifg=#9CDCFE
-        highlight! CmpItemKindText guibg=NONE guifg=#9CDCFE
-        " pink
-        highlight! CmpItemKindFunction guibg=NONE guifg=#C586C0
-        highlight! CmpItemKindMethod guibg=NONE guifg=#C586C0
-        " front
-        highlight! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
-        highlight! CmpItemKindProperty guibg=NONE guifg=#D4D4D4
-        highlight! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
-      ]]
-    end
   } 
 
   -- lsp
@@ -110,29 +76,7 @@ return packer.startup(function(use)
   use { 'junegunn/fzf', run = './install --bin', }
   use { 'ibhagwan/fzf-lua',
   -- optional for icon support
-  requires = { 'kyazdani42/nvim-web-devicons' },
-      config = function ()
-        require('fzf-lua').setup{
-          preview_opts = 'hidden',
-          fzf_colors = {
-            ['fg'] = { 'fg', 'CursorLine' },
-            ['bg'] = { 'bg', 'Normal' },
-            ['hl'] = { 'fg', 'Comment' },
-            ['fg+'] = { 'fg', 'Normal' },
-            ['bg+'] = { 'bg', 'CursorLine' },
-            ['hl+'] = { 'fg', 'Statement' },
-            ['info'] = { 'fg', 'PreProc' },
-            ['prompt'] = { 'fg', 'Conditional' },
-            ['pointer'] = { 'fg', 'Exception' },
-            ['marker'] = { 'fg', 'Keyword' },
-            ['spinner'] = { 'fg', 'Label' },
-            ['header'] = { 'fg', 'Comment' },
-            ['gutter'] = { 'bg', 'Normal' },
-            ['border'] = { 'bg', 'Normal' },
-          },
-        }
-    end
-
+  requires = { 'kyazdani42/nvim-web-devicons' }
 }
 
   -- Search text 
@@ -144,45 +88,28 @@ return packer.startup(function(use)
         run = ':TSUpdate'
   }
   -- indent line 
-  use {
-  "lukas-reineke/indent-blankline.nvim",
-    config = function()
-      require('indent_blankline').setup({
-        char = "┊",
-      })
-    end
-
-  } 
+  use { "lukas-reineke/indent-blankline.nvim" } 
 
   -- comment
   use {
-    'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
+    'numToStr/Comment.nvim'
   }
 
   -- lualine
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    config = function ()
-      require('lualine').setup({
-        sections = {
-          lualine_b = {'diff', 'diagnostics'},
-        },
-        options = {
-          theme = 'everforest'
-        }
-      });
-    end
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
   -- Auto pair plugin
   use {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
+    "windwp/nvim-autopairs"
   }
+
+  -- Git 
+use {
+  'airblade/vim-gitgutter'
+}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

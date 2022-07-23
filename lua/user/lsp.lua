@@ -23,8 +23,27 @@ vim.g.coq_settings = {
  }
 }
 vim.diagnostic.config({
-  virtual_text = false
+  virtual_text = false,
+  severity_sort = false,
+  float = {
+    border = 'rounded',
+    source = 'always',
+    header = '',
+    prefix = '',
+  },
 })
+-- signs customize
+local sign = function(opts)
+  vim.fn.sign_define(opts.name, {
+    texthl = opts.name,
+    text = opts.text,
+    numhl = ''
+  })
+end
+sign({name = 'DiagnosticSignError', text = ' E'})
+sign({name = 'DiagnosticSignWarn', text = ' W'})
+sign({name = 'DiagnosticSignHint', text = ' H'})
+sign({name = 'DiagnosticSignInfo', text = ' I'})
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
