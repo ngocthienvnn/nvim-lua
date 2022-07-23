@@ -1,12 +1,12 @@
 vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
 vim.cmd [[
 try
-"colorscheme solarized-flat
-"set background=light
-
-
-colorscheme toast
+colorscheme solarized-flat
 set background=light
+
+
+"colorscheme toast
+"set background=light
 catch /^Vim\%((\a\+)\)\=:E185/
 colorscheme default
 set background=dark
