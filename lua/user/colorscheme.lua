@@ -2,7 +2,7 @@ vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
 vim.cmd [[
 try
 colorscheme solarized-flat
-set background=light
+set background=dark
 
 
 "colorscheme toast
