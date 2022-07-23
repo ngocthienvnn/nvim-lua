@@ -29,6 +29,12 @@ if (background == 'dark' and colorscheme == 'solarized-flat') then
   hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
   hi! Search  guifg=#d8cf7e guibg=#224e54 gui=bold
 
+  hi! CocUnusedHighLight guibg=#33444a
+
+  highlight! DiagnosticUnderlineError  cterm=NONE guibg=#33444a  term=NONE
+  highlight! DiagnosticUnderlineInfo  cterm=NONE guibg=#33444a term=NONE 
+  highlight! DiagnosticUnderlineHint  cterm=NONE guibg=#33444a  term=NONE
+
   highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
   " blue
   highlight! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
