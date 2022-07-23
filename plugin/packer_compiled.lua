@@ -106,6 +106,12 @@ _G.packer_plugins = {
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/fzf-lua",
     url = "https://github.com/ibhagwan/fzf-lua"
   },
+  ["github-nvim-theme"] = {
+    config = { "\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0" },
+    loaded = true,
+    path = "/home/thien/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/thien/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -184,14 +190,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n_\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\tview\1\0\0\1\0\2\nwidth\3(\vheight\3(\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n›\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\foptions\1\0\1\ntheme\15everforest\rsections\1\0\0\14lualine_b\1\0\0\1\3\0\0\tdiff\16diagnostics\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -212,6 +210,18 @@ time([[Config for nvim-solarized-lua]], false)
 time([[Config for fzf-lua]], true)
 try_loadstring("\27LJ\2\ný\3\0\0\5\0\"\0%6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\0035\4\31\0=\4 \3=\3!\2B\0\2\1K\0\1\0\15fzf_colors\vborder\1\3\0\0\abg\vNormal\vgutter\1\3\0\0\abg\vNormal\vheader\1\3\0\0\afg\fComment\fspinner\1\3\0\0\afg\nLabel\vmarker\1\3\0\0\afg\fKeyword\fpointer\1\3\0\0\afg\14Exception\vprompt\1\3\0\0\afg\16Conditional\tinfo\1\3\0\0\afg\fPreProc\bhl+\1\3\0\0\afg\14Statement\bbg+\1\3\0\0\abg\15CursorLine\bfg+\1\3\0\0\afg\vNormal\ahl\1\3\0\0\afg\fComment\abg\1\3\0\0\abg\vNormal\afg\1\0\0\1\3\0\0\afg\15CursorLine\1\0\1\17preview_opts\vhidden\nsetup\ffzf-lua\frequire\0", "config", "fzf-lua")
 time([[Config for fzf-lua]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n_\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\tview\1\0\0\1\0\2\nwidth\3(\vheight\3(\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n›\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\foptions\1\0\1\ntheme\15everforest\rsections\1\0\0\14lualine_b\1\0\0\1\3\0\0\tdiff\16diagnostics\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
 if should_profile then save_profiles() end
 
 end)

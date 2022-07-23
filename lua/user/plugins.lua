@@ -65,6 +65,13 @@ return packer.startup(function(use)
     end
   }
   -- Colorschemes
+  use({
+  'projekt0n/github-nvim-theme',
+  config = function()
+    require('github-theme').setup({
+    })
+  end
+})
   use {
     "ishan9299/nvim-solarized-lua",
     config = function ()
