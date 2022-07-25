@@ -1,4 +1,4 @@
-local status_ok, impatient = pcall(require, "lualine")
+local status_ok, lualine = pcall(require, "lualine")
 if not status_ok then
   return
 end
@@ -22,6 +22,6 @@ if (background == 'light' and theme == 'toast') then
   lualineOpts['options']['theme'] = 'Tomorrow';
 end
 
-require('lualine').setup(lualineOpts)
+lualine.setup(lualineOpts)
 
 

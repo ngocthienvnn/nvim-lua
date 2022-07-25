@@ -1,9 +1,9 @@
-local status_ok, impatient = pcall(require, "fzf-lua")
+local status_ok, fzfLua = pcall(require, "fzf-lua")
 if not status_ok then
   return
 end
 
-require('fzf-lua').setup{
+fzfLua.setup{
   preview_opts = 'hidden',
   fzf_colors = {
     ['fg'] = { 'fg', 'CursorLine' },
