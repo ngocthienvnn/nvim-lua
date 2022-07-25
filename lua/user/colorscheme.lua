@@ -1,28 +1,13 @@
-vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
-vim.cmd [[
-try
-colorscheme toast 
-set background=light
+local ok, _ = pcall(vim.cmd, 'colorscheme toast')
+vim.cmd 'set background=light'
 
-
-"colorscheme toast
-"set background=light
-catch /^Vim\%((\a\+)\)\=:E185/
-colorscheme default
-set background=dark
-endtry
-]]
+if not ok then
+  vim.cmd 'colorscheme default' -- if the above fails, then use default
+end
 
 local background = vim.opt.background:get()
 local colorscheme = vim.g.colors_name
-local lualineOptions = {
-  sections = {
-    lualine_b = {'diff', 'diagnostics'},
-  },
-  options = {
-    theme = 'auto'
-  }
-}
+
 if (background == 'dark' and colorscheme == 'solarized-flat') then
   vim.cmd [[
   hi! Normal guifg=#769ca5
@@ -51,10 +36,8 @@ if (background == 'dark' and colorscheme == 'solarized-flat') then
   highlight! CmpItemKindProperty guibg=NONE guifg=#D4D4D4
   highlight! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
   ]]
-  lualineOptions['options']['theme'] = 'everforest';
 end
 if (background == 'light' and colorscheme == 'toast') then
-  lualineOptions['options']['theme'] = 'Tomorrow';
   vim.cmd[[
   hi! Normal ctermfg=223 guifg=#503f4e ctermbg=235 guibg=#f1f1f1
   hi! SignColumn guibg=#f1f1f1 gui=bold 
@@ -87,4 +70,3 @@ if (background == 'light' and colorscheme == 'toast') then
   ]]
 end
 
-require('lualine').setup(lualineOptions)
