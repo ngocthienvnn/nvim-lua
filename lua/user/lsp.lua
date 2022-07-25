@@ -101,6 +101,9 @@ lspconfig['intelephense'].setup {
     intelephense = {
       diagnostics = {
          undefinedTypes = false
+      },
+      files = {
+        maxSize = 300000000
       }
     }
   }
