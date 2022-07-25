@@ -97,6 +97,7 @@ local lspconfig = require('lspconfig')
 lspconfig['intelephense'].setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  update_in_insert = false,
   settings = {
     intelephense = {
       diagnostics = {
@@ -113,6 +114,7 @@ lspconfig['intelephense'].setup {
 lspconfig['tsserver'].setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  update_in_insert = false,
 }
 
 -- luasnip setup
