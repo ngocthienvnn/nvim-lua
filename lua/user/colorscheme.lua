@@ -49,7 +49,7 @@ if (background == 'light' and colorscheme == 'toast') then
   " hi! Normal ctermfg=223 ctermbg=235 guibg=#F5F5F5
   hi! phpFunction gui=bold guifg=#AA3731
   hi! Function gui=bold guifg=#AA3731
-  hi! Identifier  guifg=#4D2764
+  hi! Identifier guifg=#4D2764
   hi! phpMethod gui=bold guifg=#AA3731
   hi! Search guifg=#d1cfc8
   hi! Special gui=bold
