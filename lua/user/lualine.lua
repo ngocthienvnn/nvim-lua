@@ -12,7 +12,7 @@ local lualineOpts = {
     lualine_b = {'diff', 'diagnostics'},
   },
   options = {
-    -- theme = 'auto'
+    theme = 'auto'
   }
 };
 if (background == 'dark' and theme == 'solarized-flat') then
