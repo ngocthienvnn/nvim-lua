@@ -62,6 +62,8 @@ return packer.startup(function(use)
   use {
     "ishan9299/nvim-solarized-lua",
   } 
+use 'navarasu/onedark.nvim'
+
 
   -- lsp
   use "neovim/nvim-lspconfig"
