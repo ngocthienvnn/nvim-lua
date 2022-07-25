@@ -20,6 +20,10 @@ vim.g.maplocalleader = ","
 -- nohl
 keymap("n", "//", ":nohlsearch<CR>", opts)
 
+--  Make 0 go to the first character rather than the beginning of the line
+keymap("n", "0", "^", opts)
+keymap("n", "^", "0", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
