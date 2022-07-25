@@ -1,27 +1,8 @@
-vim.g.coq_settings = {
-  auto_start = true,
-  display = {pum  = {fast_close = false}},
-  -- Other settings
- clients = {
-   buffers = {
-     enabled = false,
-     weight_adjust = -1.9,
-   },
-   tree_sitter = {
-     enabled = false,
-     weight_adjust = -1.5
-   },
-   lsp = {
-     enabled = true,
-     weight_adjust = 1.5
-   },
-   snippets = {
-     enabled = false,
-     weight_adjust = 1.9
-   },
+local status_ok, impatient = pcall(require, "cmp_nvim_lsp")
+if not status_ok then
+  return
+end
 
- }
-}
 vim.diagnostic.config({
   virtual_text = false,
   severity_sort = false,
