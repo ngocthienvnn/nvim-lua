@@ -44,7 +44,6 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
-  use "moll/vim-bbye"
   use "lewis6991/impatient.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
@@ -60,7 +59,6 @@ return packer.startup(function(use)
   use {
     "jsit/toast.vim",
   }
-  use "sainnhe/everforest"
   use {
     "ishan9299/nvim-solarized-lua",
   } 
