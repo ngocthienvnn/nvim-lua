@@ -71,6 +71,7 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use 'hrsh7th/cmp-nvim-lsp-signature-help' -- Display function signatures 
   
 
   use { 'junegunn/fzf', run = './install --bin', }
