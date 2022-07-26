@@ -1,11 +1,14 @@
-local configFile = os.getenv( "HOME" ) .."/.nvim_kitty/nvim.lua"
-local ok, _f = pcall(loadfile, configFile)
+function loadConfigs()
+  local file = os.getenv( "HOME" ) .."/.nvim_kitty/nvim.lua"
+  local _f = loadfile(file)
+  return _f()
+end
+local ok, _f = pcall(loadConfigs)
 if ok then
-local _f = assert(_f)();
-local _bg = "set background=" .._f['background']
-local _theme = "colorscheme " .._f['colorscheme']
-vim.cmd(_bg)
-vim.cmd(_theme)
+  local _bg = "set background=" .._f['background']
+  local _theme = "colorscheme " .._f['colorscheme']
+  vim.cmd(_bg)
+  vim.cmd(_theme)
 end
 if not ok then
   local ok, _ = pcall(vim.cmd, 'colorscheme toast')
