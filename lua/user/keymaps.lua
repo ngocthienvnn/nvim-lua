@@ -39,6 +39,7 @@ keymap("n", "<Leader>t", ":lua require('fzf-lua').files()<CR>", opts)
 keymap("n", "<Leader>b", ":lua require('fzf-lua').buffers()<CR>", opts)
 keymap("n", "<Space>o", ":lua require('fzf-lua').lsp_document_symbols()<CR>", opts)
 keymap("n", "<Space>a", ":lua require('fzf-lua').diagnostics_document()<CR>", opts)
+keymap("n", "<Leader>r", ":lua require'fzf-lua'.files({ cmd = 'rg --color=never --files --hidden --no-ignore' })<CR>", opts)
 
 -- nvim spectre
 keymap("n", "<Leader>S", ":lua require('spectre').open()<CR>", opts)
