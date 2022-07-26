@@ -1,8 +1,18 @@
-local ok, _ = pcall(vim.cmd, 'colorscheme toast')
-vim.cmd 'set background=light'
-
+local configFile = os.getenv( "HOME" ) .."/.nvim_kitty/nvim.lua"
+local ok, _f = pcall(loadfile, configFile)
+if ok then
+local _f = assert(_f)();
+local _bg = "set background=" .._f['background']
+local _theme = "colorscheme " .._f['colorscheme']
+vim.cmd(_bg)
+vim.cmd(_theme)
+end
 if not ok then
-  vim.cmd 'colorscheme default' -- if the above fails, then use default
+  local ok, _ = pcall(vim.cmd, 'colorscheme toast')
+  vim.cmd 'set background=light'
+  if not ok then
+    vim.cmd 'colorscheme default' -- if the above fails, then use default
+  end
 end
 
 local background = vim.opt.background:get()
