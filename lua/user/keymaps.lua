@@ -20,6 +20,9 @@ vim.g.maplocalleader = ","
 -- nohl
 keymap("n", "//", ":nohlsearch<CR>", opts)
 
+-- paste over without overwriting register
+keymap("v", "p", '"_dP', opts)
+
 --  Make 0 go to the first character rather than the beginning of the line
 keymap("n", "0", "^", opts)
 keymap("n", "^", "0", opts)
@@ -51,5 +54,3 @@ keymap('n', "<C-\\>", "<cmd>:NvimTreeFindFileToggle<CR>", opts)
 
 --- show diagnostic at current line
 keymap("n", "<Leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>", opts)
-
-
