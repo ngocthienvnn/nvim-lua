@@ -11,5 +11,5 @@ nvimtree.setup({
 })
 
 vim.cmd("hi! link NvimTreeNormal  Normal")
--- vim.cmd("hi! link NvimTreeVertSplit  Normal")
+vim.cmd("hi! link NvimTreeVertSplit  VertSplit")
 vim.cmd("hi! link NvimTreeEndOfBuffer Normal")
