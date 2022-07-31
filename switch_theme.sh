@@ -47,6 +47,6 @@ cat "$KITTY_SOURCE_CONFIG_FILE" "$KITTY_SOURCE_THEME_FILE" > "$KITTY_NEW_CONFIG_
 # update symlink
 ln -sf "$KITTY_NEW_CONFIG_FILE" "$KITTY_DEFAULT_CONFIG_PATH"
 
-echo return {[\""colorscheme\""] = \""${NVIM_COLORSCHEME_OPT}\"", [\""background\""] = \""${NVIM_BACKGROUND_OPT}\""} > "$NVIM_CONFIG_FILE"
+echo return {[\""colorscheme\""]=\""${NVIM_COLORSCHEME_OPT}\"", [\""background\""]=\""${NVIM_BACKGROUND_OPT}\""} > "$NVIM_CONFIG_FILE"
 
 
