@@ -5,5 +5,7 @@ end
 
 onedark.setup {
     style = 'darker',
-    toggle_style_key = "<Leader>qq" -- Default keybinding to toggle
-}
+    toggle_style_key = "<Leader>qq", -- Default keybinding to toggle,
+    highlights = {
+      TSConstructor = {fmt='none', fg='#b7814e'},
+    }}
