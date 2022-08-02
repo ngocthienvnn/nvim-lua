@@ -83,8 +83,11 @@ use 'navarasu/onedark.nvim'
   -- Search text 
   use "windwp/nvim-spectre"
 
-  use "sheerun/vim-polyglot"
-  -- indent line 
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }  
+    -- indent line 
   use { "lukas-reineke/indent-blankline.nvim" } 
 
   -- comment

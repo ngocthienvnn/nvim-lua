@@ -12,4 +12,4 @@ require "user.indent_blankline"
 require "user.lualine"
 require "user.nvim-autopairs"
 require "user.nvim-tree"
-
+require "user.nvim-treesitter"
