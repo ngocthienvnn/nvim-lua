@@ -87,6 +87,8 @@ use 'navarasu/onedark.nvim'
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }  
+  use "nvim-treesitter/nvim-treesitter-textobjects"
+
     -- indent line 
   use { "lukas-reineke/indent-blankline.nvim" } 
 
