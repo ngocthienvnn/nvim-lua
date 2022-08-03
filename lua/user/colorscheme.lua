@@ -66,7 +66,7 @@ if (background == 'light' and colorscheme == 'toast') then
   hi! Identifier guifg=#4D2764
   hi! phpMethod gui=bold guifg=#AA3731
   hi! Search guifg=#d1cfc8
-  hi! Special gui=bold
+  hi! Special guifg=#0014a8
   hi! IncSearch guifg=Grey gui=standout cterm=standout
 
   highlight! DiagnosticUnderlineError guifg=#625f57 cterm=NONE guibg=#d3d3d2  term=NONE
