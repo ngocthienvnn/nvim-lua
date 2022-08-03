@@ -53,6 +53,7 @@ end
 if (background == 'light' and colorscheme == 'toast') then
   vim.cmd[[
   hi! Normal ctermfg=223 guifg=#503f4e ctermbg=235 guibg=#f1f1f1
+  hi! TSVariable guifg=#503f4e 
   hi! SignColumn guibg=#f1f1f1 gui=bold 
   hi! VertSplit term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
   hi! LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
