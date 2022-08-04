@@ -18,8 +18,8 @@ end
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
   augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -62,7 +62,7 @@ return packer.startup(function(use)
   use {
     "ishan9299/nvim-solarized-lua",
   } 
-use 'navarasu/onedark.nvim'
+  use 'navarasu/onedark.nvim'
 
 
   -- lsp
@@ -72,13 +72,13 @@ use 'navarasu/onedark.nvim'
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use 'hrsh7th/cmp-nvim-lsp-signature-help' -- Display function signatures 
-  
+
 
   use { 'junegunn/fzf', run = './install --bin', }
   use { 'ibhagwan/fzf-lua',
-  -- optional for icon support
-  requires = { 'kyazdani42/nvim-web-devicons' }
-}
+    -- optional for icon support
+    requires = { 'kyazdani42/nvim-web-devicons' }
+  }
 
   -- Search text 
   use "windwp/nvim-spectre"
@@ -89,7 +89,7 @@ use 'navarasu/onedark.nvim'
   }  
   use "nvim-treesitter/nvim-treesitter-textobjects"
 
-    -- indent line 
+  -- indent line 
   use { "lukas-reineke/indent-blankline.nvim" } 
 
   -- comment
@@ -109,9 +109,11 @@ use 'navarasu/onedark.nvim'
   }
 
   -- Git 
-use {
-  'airblade/vim-gitgutter'
-}
+  use {
+    'airblade/vim-gitgutter'
+  }
+  -- split join
+  use "AndrewRadev/splitjoin.vim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

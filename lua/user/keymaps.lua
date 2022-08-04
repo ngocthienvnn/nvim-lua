@@ -54,3 +54,8 @@ keymap('n', "<C-\\>", "<cmd>:NvimTreeFindFileToggle<CR>", opts)
 
 --- show diagnostic at current line
 keymap("n", "<Leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>", opts)
+
+-- split join
+
+keymap("n", "sj", ":SplitjoinSplit<CR>", opts)
+keymap("n", "sk", ":SplitjoinJoin<CR>", opts)
