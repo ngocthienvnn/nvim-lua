@@ -123,7 +123,11 @@ return packer.startup(function(use)
     require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
   end
 } 
-
+-- debugger
+  use {
+    'puremourning/vimspector',
+    setup = [[vim.g.vimspector_enable_mappings = 'HUMAN']],
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
