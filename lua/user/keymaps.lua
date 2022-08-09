@@ -60,7 +60,25 @@ keymap("n", "sj", ":SplitjoinSplit<CR>", opts)
 keymap("n", "sk", ":SplitjoinJoin<CR>", opts)
 
 -- nvim hop
-
 vim.api.nvim_set_keymap('', ',g', "<cmd>lua require'hop'.hint_char1()<cr>", {})
 vim.api.nvim_set_keymap('', ',G', "<cmd>lua require'hop'.hint_char2()<cr>", {})
 
+-- nvim-dap
+vim.keymap.set('n', '<F3>', function() require"dap".toggle_breakpoint() end)
+vim.keymap.set('n', '<leader>dH', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+vim.keymap.set('n', '<S-F9>', function() require"dap".step_out() end)
+vim.keymap.set('n', "<F7>", function() require"dap".step_into() end)
+vim.keymap.set('n', '<F8>', function() require"dap".step_over() end)
+vim.keymap.set('n', '<F5>', function() require"dap".continue() end)
+vim.keymap.set('n', '<F9>', function() require"dap".run_to_cursor() end)
+vim.keymap.set('n', '<F6>', function() require"dap".terminate() end)
+vim.keymap.set('n', '<leader>dB', function() require"dap".clear_breakpoints() end)
+vim.keymap.set('n', '<leader>de', function() require"dap".set_exception_breakpoints({"all"}) end)
+vim.keymap.set('n', '<leader>da', function() require"debugHelper".attach() end)
+vim.keymap.set('n', '<leader>dA', function() require"debugHelper".attachToRemote() end)
+vim.keymap.set('n', '<leader>di', function() require"dap.ui.widgets".hover() end)
+vim.keymap.set('n', '<leader>d?', function() local widgets=require"dap.ui.widgets";widgets.centered_float(widgets.scopes) end)
+vim.keymap.set('n', '<leader>dk', ':lua require"dap".up()<CR>zz')
+vim.keymap.set('n', '<leader>dj', ':lua require"dap".down()<CR>zz')
+vim.keymap.set('n', '<leader>dr', ':lua require"dap".repl.toggle({}, "vsplit")<CR><C-w>l')
+vim.keymap.set('n', '<leader>dc', function() require"dapui".toggle() end)
