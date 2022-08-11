@@ -65,7 +65,7 @@ vim.api.nvim_set_keymap('', ',G', "<cmd>lua require'hop'.hint_char2()<cr>", {})
 
 -- nvim-dap
 vim.keymap.set('n', '<F3>', function() require"dap".toggle_breakpoint() end)
-vim.keymap.set('n', '<leader>dH', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+-- vim.keymap.set('n', '<leader>dH', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
 vim.keymap.set('n', '<S-F9>', function() require"dap".step_out() end)
 vim.keymap.set('n', "<F7>", function() require"dap".step_into() end)
 vim.keymap.set('n', '<F8>', function() require"dap".step_over() end)
