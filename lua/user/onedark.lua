@@ -6,7 +6,8 @@ local bg = vim.opt.background:get()
 if (bg == 'light') then
   onedark.setup {
     highlights = {
-      Normal = {bg='#f9f9f9'},
+      Normal = {bg='#f7f7f7'},
+      SignColumn = {bg='#f7f7f7'},
       TSPunctBracket = {fg='#ce0000'},
       TSFunction = {fg='#3361c3'}
     }}
