@@ -5,6 +5,7 @@ end
 local bg = vim.opt.background:get()
 if (bg == 'light') then
   onedark.setup {
+    style = 'light',
     highlights = {
       Normal = {bg='#f7f7f7'},
       SignColumn = {bg='#f7f7f7'},
@@ -15,6 +16,6 @@ if (bg == 'light') then
 end
 if (bg == 'dark') then
   onedark.setup {
-    highlights = {
-    }}
+    style = 'darker'
+  }
 end
