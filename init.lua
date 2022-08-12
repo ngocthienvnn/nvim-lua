@@ -1,7 +1,6 @@
 require "user.options"
 require "user.plugins"
 require "user.impatient"
-require "user.onedark"
 require "user.colorscheme"
 require "user.lsp"
 require "user.built_ins"

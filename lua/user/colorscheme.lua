@@ -4,12 +4,13 @@ function loadConfigs()
   return _f()
 end
 local ok, _f = pcall(loadConfigs)
+local _bg = 'light'
+local _theme = 'default'
 if ok then
-  local _bg = "set background=" .._f['background']
-  local _theme = "colorscheme " .._f['colorscheme']
-  vim.cmd(_bg)
-  vim.cmd(_theme)
+  _bg = _f['background']
+  _theme = _f['colorscheme']
 end
+
 if not ok then
   local ok, _ = pcall(vim.cmd, 'colorscheme toast')
   vim.cmd 'set background=light'
@@ -17,11 +18,19 @@ if not ok then
     vim.cmd 'colorscheme default' -- if the above fails, then use default
   end
 end
+--
 
-local background = vim.opt.background:get()
-local colorscheme = vim.g.colors_name
+vim.cmd("set background=".._bg)
 
-if (background == 'dark' and colorscheme == 'solarized-flat') then
+if (_theme == 'onedark') then
+  require "user.onedark"
+  vim.cmd "colorscheme onedark"
+else
+  vim.cmd("colorscheme " .._theme)
+end
+
+
+if (_bg == 'dark' and _theme == 'solarized-flat') then
   vim.cmd [[
   hi! Normal guifg=#769ca5
   hi! Visual gui=NONE term=NONE guifg=NONE guibg=#243940
@@ -50,7 +59,7 @@ if (background == 'dark' and colorscheme == 'solarized-flat') then
   highlight! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
   ]]
 end
-if (background == 'light' and colorscheme == 'toast') then
+if (_bg == 'light' and _theme == 'toast') then
   vim.cmd[[
   hi! Normal ctermfg=223 guifg=#503f4e ctermbg=235 guibg=#f1f1f1
   hi! TSVariable guifg=#503f4e 
