@@ -56,8 +56,7 @@ keymap('n', "<C-\\>", "<cmd>:NvimTreeFindFileToggle<CR>", opts)
 keymap("n", "<Leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>", opts)
 
 -- split join
-keymap("n", "sj", ":SplitjoinSplit<CR>", opts)
-keymap("n", "sk", ":SplitjoinJoin<CR>", opts)
+keymap("n", "sj", ":lua require('trevj').format_at_cursor()<CR>", opts)
 
 -- nvim hop
 vim.api.nvim_set_keymap('', ',g', "<cmd>lua require'hop'.hint_char1()<cr>", {})

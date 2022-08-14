@@ -113,7 +113,10 @@ return packer.startup(function(use)
     'airblade/vim-gitgutter'
   }
   -- split join
-  use "AndrewRadev/splitjoin.vim"
+  use {
+    'AckslD/nvim-trevJ.lua',
+    config = 'require("trevj").setup()',  -- optional call for configurating non-default filetypes etc
+  }
 
   use {
     'phaazon/hop.nvim',
