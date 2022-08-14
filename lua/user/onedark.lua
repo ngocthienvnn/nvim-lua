@@ -18,7 +18,8 @@ if (bg == 'dark') then
   onedark.setup {
     style = 'darker',
     highlights = {
-      TSConstructor = {fg='#b69456'}
+      TSConstructor = {fg='#b69456'},
+      TSPunctBracket = {fg='#d45b5b'},
     }
   }
 end
