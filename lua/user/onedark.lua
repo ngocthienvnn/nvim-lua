@@ -16,6 +16,9 @@ if (bg == 'light') then
 end
 if (bg == 'dark') then
   onedark.setup {
-    style = 'darker'
+    style = 'darker',
+    highlights = {
+      TSConstructor = {fg='#b69456'}
+    }
   }
 end
