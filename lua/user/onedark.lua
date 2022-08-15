@@ -7,10 +7,10 @@ if (bg == 'light') then
   onedark.setup {
     style = 'light',
     highlights = {
-      Normal = {bg='#f7f7f7'},
-      SignColumn = {bg='#f7f7f7'},
+      Normal = {bg='#f3f3f3'},
+      SignColumn = {bg='#f3f3f3'},
       TSPunctBracket = {fg='#ce0000'},
-      TSFunction = {fg='#3361c3'},
+      TSFunction = {fg='#3361c3', fmt='bold'},
       TSString = {fg='#40813f'}
     }}
 end
