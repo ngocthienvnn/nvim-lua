@@ -15,6 +15,7 @@ if (bg == 'light') then
       EndOfBuffer = {bg='$_bg'},
       TSPunctBracket = {fg='#ce0000'},
       TSFunction = {fg='#3361c3', fmt='bold'},
+      TSMethod = {fg='#3361c3', fmt='bold'},
       TSString = {fg='#40813f'},
       TSComment = {fg='#818187'}
     }}
