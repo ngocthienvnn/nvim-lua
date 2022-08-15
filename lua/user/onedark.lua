@@ -6,12 +6,17 @@ local bg = vim.opt.background:get()
 if (bg == 'light') then
   onedark.setup {
     style = 'light',
+    colors = {
+      _bg = '#f3f3f3'
+    },
     highlights = {
-      Normal = {bg='#f3f3f3'},
-      SignColumn = {bg='#f3f3f3'},
+      Normal = {bg='$_bg'},
+      SignColumn = {bg='$_bg'},
+      EndOfBuffer = {bg='$_bg'},
       TSPunctBracket = {fg='#ce0000'},
       TSFunction = {fg='#3361c3', fmt='bold'},
-      TSString = {fg='#40813f'}
+      TSString = {fg='#40813f'},
+      TSComment = {fg='#818187'}
     }}
 end
 if (bg == 'dark') then
