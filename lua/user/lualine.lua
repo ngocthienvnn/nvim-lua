@@ -16,7 +16,11 @@ local opts = {
   }
 };
 if (background == 'light' and theme == 'onedark') then
-  opts['options']['theme'] = 'Tomorrow';
+
+  local custom_onelight = require'lualine.themes.onelight'
+  custom_onelight.normal.c.bg = '#d8cdd0'
+
+  opts['options']['theme'] = custom_onelight;
 end
 
 lualine.setup(opts)
