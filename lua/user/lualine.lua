@@ -19,6 +19,8 @@ if (background == 'light' and theme == 'onedark') then
 
   local custom_onelight = require'lualine.themes.onelight'
   custom_onelight.normal.c.bg = '#d8cdd0'
+  custom_onelight.inactive.c.bg = '#dbd2d4'
+  custom_onelight.inactive.c.fg = '#6d696a'
 
   opts['options']['theme'] = custom_onelight;
 end
