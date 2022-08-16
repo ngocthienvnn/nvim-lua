@@ -7,7 +7,7 @@ local background = vim.opt.background:get()
 local theme = vim.g.colors_name
 
 -- setup lualine
-local lualineOpts = {
+local opts = {
   sections = {
     lualine_b = {'diff', 'diagnostics'},
   },
@@ -15,13 +15,10 @@ local lualineOpts = {
     theme = 'auto'
   }
 };
-if (background == 'dark' and theme == 'solarized-flat') then
-  lualineOpts['options']['theme'] = 'everforest';
-end
-if (background == 'light' and theme == 'toast') then
-  lualineOpts['options']['theme'] = 'Tomorrow';
+if (background == 'light' and theme == 'onedark') then
+  opts['options']['theme'] = 'Tomorrow';
 end
 
-lualine.setup(lualineOpts)
+lualine.setup(opts)
 
 
