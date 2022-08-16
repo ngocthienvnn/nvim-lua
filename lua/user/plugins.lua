@@ -118,6 +118,12 @@ return packer.startup(function(use)
     config = 'require("trevj").setup()',  -- optional call for configurating non-default filetypes etc
   }
 
+  -- outline
+  use {
+    'simrat39/symbols-outline.nvim',
+    config = 'require("symbols-outline").setup()',  -- optional call for configurating non-default filetypes etc
+  }
+
   use {
     'phaazon/hop.nvim',
     branch = 'v2', -- optional but strongly recommended

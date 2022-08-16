@@ -62,6 +62,9 @@ keymap("n", "sj", ":lua require('trevj').format_at_cursor()<CR>", opts)
 vim.api.nvim_set_keymap('', ',g', "<cmd>lua require'hop'.hint_char1()<cr>", {})
 vim.api.nvim_set_keymap('', ',G', "<cmd>lua require'hop'.hint_char2()<cr>", {})
 
+-- symbol outline
+vim.api.nvim_set_keymap('', '<Space>p', ":SymbolsOutline<cr>", {})
+
 -- nvim-dap
 vim.keymap.set('n', '<F3>', function() require"dap".toggle_breakpoint() end)
 -- vim.keymap.set('n', '<leader>dH', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
