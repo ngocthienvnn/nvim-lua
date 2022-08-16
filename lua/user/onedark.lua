@@ -17,7 +17,8 @@ if (bg == 'light') then
       TSFunction = {fg='#3361c3', fmt='bold'},
       TSMethod = {fg='#3361c3', fmt='bold'},
       TSString = {fg='#40813f'},
-      TSComment = {fg='#818187'}
+      TSComment = {fg='#818187'},
+      Pmenu = {bg='#dedede'}
     }}
 end
 if (bg == 'dark') then
