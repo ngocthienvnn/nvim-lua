@@ -21,10 +21,10 @@ local sign = function(opts)
     numhl = ''
   })
 end
-sign({name = 'DiagnosticSignError', text = ' E'})
-sign({name = 'DiagnosticSignWarn', text = ' W'})
-sign({name = 'DiagnosticSignHint', text = ' H'})
-sign({name = 'DiagnosticSignInfo', text = ' I'})
+sign({name = 'DiagnosticSignError', text = 'E'})
+sign({name = 'DiagnosticSignWarn', text = 'W'})
+sign({name = 'DiagnosticSignHint', text = 'H'})
+sign({name = 'DiagnosticSignInfo', text = 'I'})
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
