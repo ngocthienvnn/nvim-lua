@@ -28,6 +28,7 @@ if (bg == 'dark') then
     highlights = {
       TSConstructor = {fg='#b69456'},
       TSPunctBracket = {fg='#d45b5b'},
+      TSOperator = {fg='#d45b5b'},
     }
   }
 end
