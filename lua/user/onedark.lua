@@ -29,6 +29,7 @@ if (bg == 'dark') then
       TSConstructor = {fg='#b69456'},
       TSPunctBracket = {fg='#d45b5b'},
       TSOperator = {fg='#d45b5b'},
+      Search = {bg='#98817b'}
     }
   }
 end
