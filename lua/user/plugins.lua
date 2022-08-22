@@ -110,8 +110,12 @@ return packer.startup(function(use)
 
   -- Git 
   use {
-    'airblade/vim-gitgutter'
+    'lewis6991/gitsigns.nvim',
+    tag = 'release', -- To use the latest release
   }
+  -- use {
+  --   'airblade/vim-gitgutter'
+  -- }
   -- split join
   use {
     'AckslD/nvim-trevJ.lua',
