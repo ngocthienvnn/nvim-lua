@@ -19,7 +19,7 @@ if (bg == 'light') then
       TSString = {fg='#40813f'},
       TSComment = {fg='#818187'},
       Pmenu = {bg='#dedede'},
-      Search = {bg='#c6c6c6', fg='NONE'},
+      Search = {bg='#dadada', fg='NONE'},
       Visual = {bg='#dfdfdf'},
       TSProperty = {fg='#b20245'},
       MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
@@ -32,7 +32,7 @@ if (bg == 'dark') then
       TSConstructor = {fg='#b69456'},
       TSPunctBracket = {fg='#d45b5b'},
       TSOperator = {fg='#d45b5b'},
-      Search = {bg='#98817b'}
+      Search = {bg='#464a54', fg='NONE'}
     }
   }
 end
