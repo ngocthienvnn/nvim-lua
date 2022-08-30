@@ -32,6 +32,7 @@ if (bg == 'dark') then
       TSConstructor = {fg='#b69456'},
       TSPunctBracket = {fg='#d45b5b'},
       TSOperator = {fg='#d45b5b'},
+      MatchParen = {bg= '#1f2329', fmt='bold', fg='#f945c0'},
       Search = {bg='#464a54', fg='NONE'}
     }
   }
