@@ -22,8 +22,7 @@ if (bg == 'light') then
       Search = {bg='#c6c6c6', fg='NONE'},
       Visual = {bg='#dfdfdf'},
       TSProperty = {fg='#b20245'},
-      MatchParen = {bg= '$_bg', fmt='bold', fg='black'},
-      Normal = {fg='#2d2e35'}
+      MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
 end
 if (bg == 'dark') then
