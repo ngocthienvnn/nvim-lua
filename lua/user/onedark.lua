@@ -19,8 +19,10 @@ if (bg == 'light') then
       TSString = {fg='#40813f'},
       TSComment = {fg='#818187'},
       Pmenu = {bg='#dedede'},
-      Search = {bg='#98817b'},
-      TSProperty = {fg='#b20245'}
+      Search = {bg='#c6c6c6', fg='NONE'},
+      Visual = {bg='#dfdfdf'},
+      TSProperty = {fg='#b20245'},
+      MatchParen = {bg= '$_bg', fmt='bold', fg='#f945c0'}
     }}
 end
 if (bg == 'dark') then
