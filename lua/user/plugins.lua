@@ -113,6 +113,8 @@ return packer.startup(function(use)
     'lewis6991/gitsigns.nvim',
     tag = 'release', -- To use the latest release
   }
+
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   -- use {
   --   'airblade/vim-gitgutter'
   -- }
