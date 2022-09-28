@@ -144,9 +144,16 @@ return packer.startup(function(use)
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   -- Scrolling
-
   use {
     'karb94/neoscroll.nvim'
+  }
+
+  -- windows
+  use { "anuvyklack/windows.nvim",
+    requires = "anuvyklack/middleclass",
+    config = function()
+      require('windows').setup()
+    end
   }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
