@@ -5,8 +5,7 @@ end
 
 nvimtree.setup({
   view = {
-    width = 40,
-    height = 40,
+    width = 40
   }
 })
 
