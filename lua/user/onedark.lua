@@ -22,7 +22,7 @@ if (bg == 'light') then
       Search = {bg='#dadada', fg='NONE'},
       Visual = {bg='#dfdfdf'},
       ["@property"] = {fg='#b20245'},
-      MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
+      -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
 end
 if (bg == 'dark') then
@@ -32,7 +32,7 @@ if (bg == 'dark') then
       ["@constructor"] = {fg='#b69456'},
       ["@punctuation.bracket"] = {fg='#d45b5b'},
       ["@operator"] = {fg='#d45b5b'},
-      MatchParen = {bg= '#1f2329', fmt='bold', fg='#f945c0'},
+      -- MatchParen = {bg= '#1f2329', fmt='bold', fg='#f945c0'},
       Search = {bg='#464a54', fg='NONE'}
     }
   }
