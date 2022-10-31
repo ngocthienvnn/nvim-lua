@@ -62,7 +62,7 @@ return packer.startup(function(use)
   use {
     "ishan9299/nvim-solarized-lua",
   } 
-  use 'navarasu/onedark.nvim'
+use 'navarasu/onedark.nvim'
 
 
   -- lsp
@@ -149,13 +149,12 @@ return packer.startup(function(use)
   }
 
   -- windows
-  use { "anuvyklack/windows.nvim",
-    requires = "anuvyklack/middleclass",
-    config = function()
+use { "anuvyklack/windows.nvim",
+   requires = "anuvyklack/middleclass",
+   config = function()
       require('windows').setup()
-    end
-  }
-
+   end
+}
   use {"onsails/lspkind.nvim"}
 
   -- Automatically set up your configuration after cloning packer.nvim
