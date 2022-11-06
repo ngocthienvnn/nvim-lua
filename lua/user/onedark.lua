@@ -41,6 +41,8 @@ if (bg == 'dark') then
       Normal = {bg='$_bg', fg='$_fg'},
       SignColumn = {bg='$_bg'},
       EndOfBuffer = {bg='$_bg'},
+      Search = {bg='#224e54', fg='NONE'},
+      Visual = {bg='#243940'},
       ["@method"] = {fg='#268bd2', fmt='bold'},
       ["@function"] = {fg='#268bd2', fmt='bold'},
       ["@constructor"] = {fg='#268bd2', fmt='bold'},

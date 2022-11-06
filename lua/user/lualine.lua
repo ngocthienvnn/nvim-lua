@@ -25,6 +25,11 @@ if (background == 'light' and theme == 'onedark') then
   opts['options']['theme'] = custom_onelight;
 end
 
+if (background == 'dark' and theme == 'onedark') then
+  local custom_onelight = require'lualine.themes.solarized'
+  opts['options']['theme'] = custom_onelight;
+end
+
 lualine.setup(opts)
 
 
