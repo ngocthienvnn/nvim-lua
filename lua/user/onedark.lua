@@ -35,8 +35,9 @@ if (bg == 'dark') then
       ["@constructor"] = {fg='#b69456'},
       ["@punctuation.bracket"] = {fg='#d45b5b'},
       ["@operator"] = {fg='#d45b5b'},
-      ["@string"] = {fg='green'},
       ["@parameter"] = {fg='#bfbe55'},
+      ["@method"] = {fg='#4fa6ed', fmt='bold'},
+      ["@function"] = {fg='#4fa6ed', fmt='bold'},
       MatchParen = {bg= '#1f2329', fmt='bold', fg='#c09980'},
       Search = {bg='#464a54', fg='NONE'}
     }
