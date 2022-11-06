@@ -7,7 +7,7 @@ if (bg == 'light') then
   onedark.setup {
     style = 'light',
     colors = {
-      _bg = '#e8e9ec',
+      _bg = '#f8f0dc',
       _fg ='#27292e'
     },
     highlights = {
