@@ -7,16 +7,19 @@ if (bg == 'light') then
   onedark.setup {
     style = 'light',
     colors = {
-      _bg = '#f3f3f3'
+      _bg = '#e8e9ec',
+      _fg ='#27292e'
     },
     highlights = {
-      Normal = {bg='$_bg'},
+      Normal = {bg='$_bg', fg='$_fg'},
       SignColumn = {bg='$_bg'},
       EndOfBuffer = {bg='$_bg'},
       ["@punctuation.bracket"] = {fg='#ce0000'},
       ["@function"] = {fg='#3361c3', fmt='bold'},
       ["@method"] = {fg='#3361c3', fmt='bold'},
       ["@string"] = {fg='green'},
+      ["@parameter"] = {fg='#871b5a'},
+      ['@constant'] = {fg='#ad7600'},
       ["@comment"] = {fg='#818187'},
       Pmenu = {bg='#dedede'},
       Search = {bg='#dadada', fg='NONE'},
