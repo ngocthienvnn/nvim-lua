@@ -16,7 +16,7 @@ if (bg == 'light') then
       ["@punctuation.bracket"] = {fg='#ce0000'},
       ["@function"] = {fg='#3361c3', fmt='bold'},
       ["@method"] = {fg='#3361c3', fmt='bold'},
-      ["@string"] = {fg='#40813f'},
+      ["@string"] = {fg='green'},
       ["@comment"] = {fg='#818187'},
       Pmenu = {bg='#dedede'},
       Search = {bg='#dadada', fg='NONE'},
@@ -32,6 +32,7 @@ if (bg == 'dark') then
       ["@constructor"] = {fg='#b69456'},
       ["@punctuation.bracket"] = {fg='#d45b5b'},
       ["@operator"] = {fg='#d45b5b'},
+      ["@string"] = {fg='green'},
       ["@parameter"] = {fg='#bfbe55'},
       MatchParen = {bg= '#1f2329', fmt='bold', fg='#c09980'},
       Search = {bg='#464a54', fg='NONE'}
