@@ -28,18 +28,29 @@ if (bg == 'light') then
       -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
 end
+
+-- Onedar - Solarized
 if (bg == 'dark') then
   onedark.setup {
     style = 'darker',
+    colors = {
+      _bg = '#002b36',
+      _fg ='#769ca5'
+    },
     highlights = {
-      ["@constructor"] = {fg='#b69456'},
-      ["@punctuation.bracket"] = {fg='#d45b5b'},
-      ["@operator"] = {fg='#d45b5b'},
-      ["@parameter"] = {fg='#bfbe55'},
-      ["@method"] = {fg='#4fa6ed', fmt='bold'},
-      ["@function"] = {fg='#4fa6ed', fmt='bold'},
-      MatchParen = {bg= '#1f2329', fmt='bold', fg='#c09980'},
-      Search = {bg='#464a54', fg='NONE'}
+      Normal = {bg='$_bg', fg='$_fg'},
+      SignColumn = {bg='$_bg'},
+      EndOfBuffer = {bg='$_bg'},
+      ["@method"] = {fg='#268bd2', fmt='bold'},
+      ["@function"] = {fg='#268bd2', fmt='bold'},
+      ["@constructor"] = {fg='#268bd2', fmt='bold'},
+      ["@keyword"] = {fg='#859900', fmt='bold'},
+      ["@punctuation.bracket"] = {fg='#da4a30', fmt='bold'},
+      ["@operator"] = {fg='#859900', fmt='bold'},
+      ["@punctuation.delimiter"] = {fg='#859900', fmt='bold'},
+      ["@type"] = {fg='#b58900', fmt='bold'},
+      ["@property"] = {fg="#268bd2"},
+      ['@string'] = {fg='#52b2ab'}
     }
   }
 end
