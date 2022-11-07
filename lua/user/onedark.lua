@@ -24,12 +24,13 @@ if (bg == 'light') then
       ['@constant'] = {fg='#ad7600'},
       ["@comment"] = {fg='#818187'},
       ["@type"] = {fmt='bold'},
-      ["@operator"] = {fmt='bold'},
+      ["@operator"] = {fg='#a626a4',fmt='bold'},
       ["@keyword"] = {fmt='bold'},
       ["@punctuation.delimiter"] = {fg='#a626a4',fmt='bold'},
       ["@conditional"] = {fmt='bold'},
       ["@keyword.function"] = {fmt='bold'},
-      ["@property"] = {fg='#0076a9'},
+      ["@property"] = {fg='$_fg'},
+      ["@variable.builtin"] = {fmt='bold'}
       -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
 end
@@ -59,7 +60,8 @@ if (bg == 'dark') then
       ["@property"] = {fg="#268bd2"},
       ['@string'] = {fg='#52b2ab'},
       ["@conditional"] = {fmt='bold'},
-      ["@keyword.function"] = {fmt='bold'}
+      ["@keyword.function"] = {fmt='bold'},
+      ["@variable.builtin"] = {fmt='bold'}
     }
   }
 end
