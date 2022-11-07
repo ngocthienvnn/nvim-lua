@@ -29,7 +29,7 @@ if (bg == 'light') then
       ["@punctuation.delimiter"] = {fg='#a626a4',fmt='bold'},
       ["@conditional"] = {fmt='bold'},
       ["@keyword.function"] = {fmt='bold'},
-      ["@property"] = {fg='#b20245'},
+      ["@property"] = {fg='#0076a9'},
       -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
 end
