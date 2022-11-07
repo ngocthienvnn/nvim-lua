@@ -14,6 +14,9 @@ if (bg == 'light') then
       Normal = {bg='$_bg', fg='$_fg'},
       SignColumn = {bg='$_bg'},
       EndOfBuffer = {bg='$_bg'},
+      Pmenu = {bg='#dedede'},
+      Search = {bg='#dadada', fg='NONE'},
+      Visual = {bg='#dfdfdf'},
       ["@punctuation.bracket"] = {fg='#ce0000', fmt='bold'},
       ["@function"] = {fg='#3361c3', fmt='bold'},
       ["@method"] = {fg='#3361c3', fmt='bold'},
@@ -24,9 +27,8 @@ if (bg == 'light') then
       ["@operator"] = {fmt='bold'},
       ["@keyword"] = {fmt='bold'},
       ["@punctuation.delimiter"] = {fg='#a626a4',fmt='bold'},
-      Pmenu = {bg='#dedede'},
-      Search = {bg='#dadada', fg='NONE'},
-      Visual = {bg='#dfdfdf'},
+      ["@conditional"] = {fmt='bold'},
+      ["@keyword.function"] = {fmt='bold'},
       ["@property"] = {fg='#b20245'},
       -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
     }}
@@ -55,7 +57,9 @@ if (bg == 'dark') then
       ["@punctuation.delimiter"] = {fg='#859900', fmt='bold'},
       ["@type"] = {fg='#b58900', fmt='bold'},
       ["@property"] = {fg="#268bd2"},
-      ['@string'] = {fg='#52b2ab'}
+      ['@string'] = {fg='#52b2ab'},
+      ["@conditional"] = {fmt='bold'},
+      ["@keyword.function"] = {fmt='bold'}
     }
   }
 end
