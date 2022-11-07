@@ -1,4 +1,4 @@
-# ~/.config/fish/functions
+# put this file into ~/.config/fish/functions
 function fish_prompt --description 'Write out the prompt'
   set -l last_status $status
 
@@ -18,8 +18,11 @@ function fish_prompt --description 'Write out the prompt'
 
 
   # PWD
-
   set -g __fish_git_prompt_char_cleanstate '✔'
+  set -g __fish_git_prompt_color_branch_dirty cyan
+  set -g __fish_git_prompt_color_untrackedfiles cyan
+  set -g __fish_git_prompt_color_branch_staged grey
+  set -g __fish_git_prompt_color_stagedstate grey
   set_color  -o
   __terlar_git_prompt
   # fish_hg_prompt
