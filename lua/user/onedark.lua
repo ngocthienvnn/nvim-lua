@@ -54,7 +54,7 @@ if (bg == 'dark') then
       ["@function"] = {fg='#268bd2', fmt='bold'},
       ["@constructor"] = {fg='#268bd2', fmt='bold'},
       ["@keyword"] = {fg='#859900', fmt='bold'},
-      ["@punctuation.bracket"] = {fg='#da4a30', fmt='bold'},
+      ["@punctuation.bracket"] = {fg='#ae3b26', fmt='bold'},
       ["@operator"] = {fg='#859900', fmt='bold'},
       ["@punctuation.delimiter"] = {fg='#859900', fmt='bold'},
       ["@type"] = {fg='#b58900', fmt='bold'},
