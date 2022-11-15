@@ -31,8 +31,8 @@ if (bg == 'light') then
       ["@conditional"] = {fmt='bold'},
       ["@keyword.function"] = {fmt='bold'},
       ["@property"] = {fg='$_fg'},
-      ["@variable.builtin"] = {fmt='bold'}
-      -- MatchParen = {bg= '$_bg', fmt='bold', fg='black'}
+      ["@variable.builtin"] = {fmt='bold'},
+      MatchParen = {bg= '$_bg'}
     }}
 end
 
@@ -63,7 +63,8 @@ if (bg == 'dark') then
       ['@string'] = {fg='#52b2ab'},
       ["@conditional"] = {fmt='bold'},
       ["@keyword.function"] = {fmt='bold'},
-      ["@variable.builtin"] = {fmt='bold'}
+      ["@variable.builtin"] = {fmt='bold'},
+      MatchParen = {bg= '$_bg'}
     }
   }
 end
