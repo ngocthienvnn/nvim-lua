@@ -119,11 +119,13 @@ use 'navarasu/onedark.nvim'
   --   'airblade/vim-gitgutter'
   -- }
   -- split join
-  use {
-    'AckslD/nvim-trevJ.lua',
-    config = 'require("trevj").setup()',  -- optional call for configurating non-default filetypes etc
-  }
-
+  use({
+    'Wansmer/treesj',
+    requires = { 'nvim-treesitter' },
+    config = function()
+      require('treesj').setup({--[[ your config ]]})
+    end,
+  })
   -- outline
   use {
     'simrat39/symbols-outline.nvim',
