@@ -54,7 +54,7 @@ if (bg == 'dark') then
       ["@function"] = {fg='#268bd2', fmt='bold'},
       ["@constructor"] = {fg='#268bd2', fmt='bold'},
       ["@keyword"] = {fg='#859900', fmt='bold'},
-      ["@punctuation.bracket"] = {fg='#ae3b26', fmt='bold'},
+      ["@punctuation.bracket"] = {fg='#f55361'},
       ["@operator"] = {fg='#859900', fmt='bold'},
       ["@punctuation.delimiter"] = {fg='#859900', fmt='bold'},
       ["@type"] = {fg='#b58900', fmt='bold'},
@@ -64,6 +64,7 @@ if (bg == 'dark') then
       ["@conditional"] = {fmt='bold'},
       ["@keyword.function"] = {fmt='bold'},
       ["@variable.builtin"] = {fmt='bold'},
+      ["@tag"] = {fg="#cf6e3b"},
       MatchParen = {bg= '$_bg'}
     }
   }
