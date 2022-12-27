@@ -157,7 +157,7 @@ return packer.startup(function(use)
       require('windows').setup()
     end
   }
-  use {"onsails/lspkind.nvim"}
+  -- use {"onsails/lspkind.nvim"}
 
   use 'eandrju/cellular-automaton.nvim' 
 
