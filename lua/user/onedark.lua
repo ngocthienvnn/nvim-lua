@@ -32,7 +32,8 @@ if (bg == 'light') then
       ["@keyword.function"] = {fmt='bold'},
       ["@property"] = {fg='$_fg'},
       ["@variable.builtin"] = {fmt='bold'},
-      MatchParen = {bg= '$_bg'}
+      MatchParen = {bg= '$_bg'},
+      IndentBlanklineChar = { fg = "#918f8d", fmt = "nocombine" },
     }}
 end
 
@@ -65,7 +66,8 @@ if (bg == 'dark') then
       ["@keyword.function"] = {fmt='bold'},
       ["@variable.builtin"] = {fmt='bold'},
       ["@tag"] = {fg="#cf6e3b"},
-      MatchParen = {bg= '$_bg'}
+      MatchParen = {bg= '$_bg'},
+      IndentBlanklineChar = { fg = "#727a7f", fmt = "nocombine" },
     }
   }
 end
