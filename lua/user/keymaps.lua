@@ -33,6 +33,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Save file
+keymap('i', "<C-;>","<esc>:w<CR>", opts)
+keymap('n', "<C-;>",":w<CR>", opts)
+
 -- split windows
 keymap("n", "vv", "<C-w>v", opts)
 keymap("n", "ss", "<C-w>s", opts)
