@@ -97,6 +97,14 @@ lspconfig['intelephense'].setup {
 --   capabilities = capabilities,
 --   update_in_insert = false,
 -- }
+
+-- Css
+lspconfig['cssls'].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  update_in_insert = false,
+}
+
 require("typescript").setup({
   disable_commands = false, -- prevent the plugin from creating Vim commands
   debug = false, -- enable debug logging for commands
