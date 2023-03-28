@@ -96,6 +96,7 @@ return packer.startup(function(use)
   use {
     'numToStr/Comment.nvim'
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- lualine
   use {
