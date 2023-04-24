@@ -32,6 +32,10 @@ if (bg == 'light') then
       ["@keyword.function"] = {fmt='bold'},
       ["@property"] = {fg='$_fg'},
       ["@variable.builtin"] = {fmt='bold'},
+      ["@tag"] = {fg="#e64553", fmt='bold'},
+      ["@tag.attribute"] = {fg="#8839ef"},
+      ["@parameter"] = {fg="#3361c3"},
+      ['@boolean'] = {fg='#9a6900'},
       MatchParen = {bg= '$_bg'},
       IndentBlanklineChar = { fg = "#918f8d", fmt = "nocombine" },
     }}
