@@ -8,7 +8,8 @@ if (bg == 'light') then
     style = 'light',
     colors = {
       _bg = '#F5F5DC',
-      _fg ='#27292e'
+      _fg ='#27292e',
+      _func='#2d57af'
     },
     highlights = {
       Normal = {bg='$_bg', fg='$_fg'},
@@ -18,8 +19,8 @@ if (bg == 'light') then
       Search = {bg='#dadada', fg='NONE'},
       Visual = {bg='#dfdfdf'},
       ["@punctuation.bracket"] = {fg='#ce0000', fmt='bold'},
-      ["@function"] = {fg='#3361c3', fmt='bold'},
-      ["@method"] = {fg='#3361c3', fmt='bold'},
+      ["@function"] = {fg='$_func', fmt='bold'},
+      ["@method"] = {fg='$_func', fmt='bold'},
       ["@string"] = {fg='green'},
       ['@constant'] = {fg='#ad7600'},
       ["@comment"] = {fg='#818187'},
@@ -34,7 +35,7 @@ if (bg == 'light') then
       ["@variable.builtin"] = {fmt='bold'},
       ["@tag"] = {fg="#e64553", fmt='bold'},
       ["@tag.attribute"] = {fg="#8839ef"},
-      ["@parameter"] = {fg="#3361c3"},
+      ["@parameter"] = {fg="$_func"},
       ['@boolean'] = {fg='#9a6900'},
       MatchParen = {bg= '$_bg'},
       IndentBlanklineChar = { fg = "#918f8d", fmt = "nocombine" },
