@@ -72,6 +72,7 @@ if (bg == 'dark') then
       ["@keyword.function"] = {fmt='bold'},
       ["@variable.builtin"] = {fmt='bold'},
       ["@tag"] = {fg="#cf6e3b", fmt='bold'},
+      ['@tag.attribute'] = {fg='#b69456'},
       MatchParen = {bg= '$_bg'},
       IndentBlanklineChar = { fg = "#727a7f", fmt = "nocombine" },
     }
