@@ -47,7 +47,7 @@ if (bg == 'dark') then
   onedark.setup {
     style = 'darker',
     colors = {
-      _bg = '#002b36',
+      _bg = '#101e2a',
       _fg ='#769ca5'
     },
     highlights = {
