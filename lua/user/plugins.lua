@@ -90,7 +90,7 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter-textobjects"
 
   -- indent line 
-  use { "lukas-reineke/indent-blankline.nvim" } 
+  use { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} } 
 
   -- comment
   use {
