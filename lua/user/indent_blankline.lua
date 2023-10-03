@@ -4,4 +4,8 @@ if not status_ok then
 end
 
 indentBL.setup({
+  scope = {
+    show_start = false,
+    show_end = false,
+  },
 })
