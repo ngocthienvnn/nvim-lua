@@ -10,6 +10,7 @@ local theme = vim.g.colors_name
 local opts = {
   sections = {
     lualine_b = {'diff', 'diagnostics'},
+    lualine_y = {},
   },
   options = {
     theme = 'auto'
@@ -27,6 +28,7 @@ end
 
 if (background == 'dark' and theme == 'onedark') then
   local custom_onelight = require'lualine.themes.solarized'
+  custom_onelight.normal.b.bg ='#2c3e50'
   opts['options']['theme'] = custom_onelight;
 end
 
