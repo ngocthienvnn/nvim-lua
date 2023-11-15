@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "Available nvim + kitty colorschemes: "
-echo "1. Toast - Light"
-echo "2. Solarized-flat - Dark"
-echo "3. Onedark - Dark"
-echo "4. Onedark - Light"
+echo "1. Dayfox"
+echo "2. Nightfox"
 
 read -p "Select your colorscheme: " theme
 
@@ -25,23 +23,12 @@ echo "$NVIM_COLORSCHEME_OPTS"
 if [[ "$theme" == "1" ]]
 then
   KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/toast_theme.conf"
-  NVIM_COLORSCHEME_OPT="toast"
-  NVIM_BACKGROUND_OPT="light"
+  NVIM_COLORSCHEME_OPT="dayfox"
 elif [[ "$theme" == "2" ]] 
-then
-  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/solarized8_flat_theme.conf"
-  NVIM_COLORSCHEME_OPT="solarized-flat"
-  NVIM_BACKGROUND_OPT="dark"
-elif [[ "$theme" == "4" ]] 
-then
-  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/onedark_light_theme.conf"
-  NVIM_COLORSCHEME_OPT="onedark"
-  NVIM_BACKGROUND_OPT="light"
 else
   # set default theme as onedark
   KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/onedark_dark_theme.conf"
-  NVIM_COLORSCHEME_OPT="onedark"
-  NVIM_BACKGROUND_OPT="dark"
+  NVIM_COLORSCHEME_OPT="nightfox"
 fi
 
 # empty current config files
