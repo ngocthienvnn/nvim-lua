@@ -22,12 +22,15 @@ KITTY_SOURCE_CONFIG_FILE="$BASE_FOLDER/kitty/kitty.conf"
 echo "$NVIM_COLORSCHEME_OPTS"
 if [[ "$theme" == "1" ]]
 then
-  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/toast_theme.conf"
+  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/dayfox.conf"
   NVIM_COLORSCHEME_OPT="dayfox"
 elif [[ "$theme" == "2" ]] 
+then
+  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/nightfox.conf"
+  NVIM_COLORSCHEME_OPT="dayfox"
 else
   # set default theme as onedark
-  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/onedark_dark_theme.conf"
+  KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/dayfox.conf"
   NVIM_COLORSCHEME_OPT="nightfox"
 fi
 
@@ -40,6 +43,6 @@ cat "$KITTY_SOURCE_CONFIG_FILE" "$KITTY_SOURCE_THEME_FILE" > "$KITTY_NEW_CONFIG_
 # update symlink
 ln -sf "$KITTY_NEW_CONFIG_FILE" "$KITTY_DEFAULT_CONFIG_PATH"
 
-echo return {[\""colorscheme\""]=\""${NVIM_COLORSCHEME_OPT}\"", [\""background\""]=\""${NVIM_BACKGROUND_OPT}\""} > "$NVIM_CONFIG_FILE"
+echo return {[\""colorscheme\""]=\""${NVIM_COLORSCHEME_OPT}\""} > "$NVIM_CONFIG_FILE"
 
 
