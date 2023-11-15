@@ -22,6 +22,7 @@ return { "EdenEast/nightfox.nvim",
             ['@operator'] = {fg='#859900'},
             ['@punctuation.delimiter'] = {fg='#859900'},
             ['@punctuation.bracket'] = {fg='#ce4c57'},
+            ['@variable'] = {fg='#d6d0bf'},
           }
         },
       });
