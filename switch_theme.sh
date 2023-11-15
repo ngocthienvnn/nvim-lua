@@ -27,7 +27,7 @@ then
 elif [[ "$theme" == "2" ]] 
 then
   KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/nightfox.conf"
-  NVIM_COLORSCHEME_OPT="dayfox"
+  NVIM_COLORSCHEME_OPT="nightfox"
 else
   # set default theme as onedark
   KITTY_SOURCE_THEME_FILE="$BASE_FOLDER/kitty/dayfox.conf"
