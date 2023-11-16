@@ -23,6 +23,10 @@ return { "EdenEast/nightfox.nvim",
             ['@punctuation.delimiter'] = {fg='#859900'},
             ['@punctuation.bracket'] = {fg='#ce4c57'},
             ['@variable'] = {fg='#d6d0bf'},
+          },
+          dayfox = {
+            ['@punctuation.bracket'] = {fg='#ce0000', style='bold'},
+            ['@function'] = {fg='#2d57af', style='bold'},
           }
         },
       });
