@@ -5,8 +5,9 @@ return { "lukas-reineke/indent-blankline.nvim", main = "ibl",
       scope = {
         show_start = false,
         show_end = false,
+        enabled = false
       },
-      indent = { char = ':' }
+      indent = { char = ':' },
     });
   end
 }
