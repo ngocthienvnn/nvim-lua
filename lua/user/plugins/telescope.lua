@@ -34,5 +34,7 @@ return {
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>", { desc = "Fuzzy find files in buffers" })
+    keymap.set("n", "<Space>o", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Find document symbols" })
+    keymap.set("n","<C-p>", ":Telescope<CR>", { desc = 'Show telescope commands' })
   end,
 }
