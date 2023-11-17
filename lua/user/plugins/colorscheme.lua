@@ -17,7 +17,7 @@ return { "EdenEast/nightfox.nvim",
             fg1="#b8baba"
           },
           dayfox = {
-            bg1 = "#ffffff", -- Black background
+            bg1 = "#f0f2f5", -- Black background
           }
         },
         groups = {
