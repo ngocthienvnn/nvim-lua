@@ -17,7 +17,7 @@ return { "EdenEast/nightfox.nvim",
             fg1="#b8baba"
           },
           dayfox = {
-            bg1 = "#ffffff", -- Black background
+            bg1 = "#f1f3f6", -- Black background
           }
         },
         groups = {
@@ -31,7 +31,7 @@ return { "EdenEast/nightfox.nvim",
           dayfox = {
             ['@punctuation.bracket'] = {fg='#ce0000', style='bold'},
             ['@function'] = {fg='#2d57af', style='bold'},
-            CursorLine = {bg='#ffffff'}
+            CursorLine = {bg='#f1f3f6'}
           }
         },
       });
