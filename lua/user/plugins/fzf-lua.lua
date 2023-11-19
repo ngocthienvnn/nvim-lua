@@ -5,7 +5,6 @@ return {
   config = function()
     -- calling `setup` is optional for customization
     require("fzf-lua").setup({
-      preview_opts = 'hidden',
       fzf_colors = {
         ['fg'] = { 'fg', 'CursorLine' },
         ['bg'] = { 'bg', 'Normal' },
