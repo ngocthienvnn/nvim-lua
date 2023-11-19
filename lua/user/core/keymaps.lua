@@ -41,6 +41,14 @@ keymap('n', "<C-;>",":w<CR>", opts)
 keymap("n", "vv", "<C-w>v", opts)
 keymap("n", "ss", "<C-w>s", opts)
 
+-- Move cursor to end of line
+keymap('i', '<C-l>', '<Esc>A', { noremap = true, silent = true })
+keymap('n', '<C-l>', '<Esc>A', { noremap = true, silent = true })
+
+keymap('i', '<C-h>', '<Esc>I', { noremap = true, silent = true })
+keymap('n', '<C-h>', '<Esc>I', { noremap = true, silent = true })
+
+
 -- fzf lua
 -- keymap("n", "<Leader>t", ":lua require('fzf-lua').files()<CR>", opts)
 -- keymap("n", "<Leader>b", ":lua require('fzf-lua').buffers()<CR>", opts)
