@@ -42,11 +42,11 @@ keymap("n", "vv", "<C-w>v", opts)
 keymap("n", "ss", "<C-w>s", opts)
 
 -- Move cursor to end of line
-keymap('i', '<C-l>', '<Esc>A', { noremap = true, silent = true })
-keymap('n', '<C-l>', '<Esc>A', { noremap = true, silent = true })
+keymap('i', 'L', '<Esc>A', { noremap = true, silent = true })
+keymap('n', 'L', '<Esc>A', { noremap = true, silent = true })
 
-keymap('i', '<C-h>', '<Esc>I', { noremap = true, silent = true })
-keymap('n', '<C-h>', '<Esc>I', { noremap = true, silent = true })
+keymap('i', 'H', '<Esc>I', { noremap = true, silent = true })
+keymap('n', 'H', '<Esc>I', { noremap = true, silent = true })
 
 
 -- fzf lua
