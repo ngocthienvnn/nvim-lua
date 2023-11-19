@@ -26,12 +26,14 @@ return { "EdenEast/nightfox.nvim",
             ['@punctuation.delimiter'] = {fg='#859900'},
             ['@punctuation.bracket'] = {fg='#ce4c57', style="bold"},
             ['@variable'] = {fg='#d6d0bf'},
-            CursorLine = {bg='#161f2b'}
+            CursorLine = {bg='#161f2b'},
+            MatchParen = {style="reverse", fg="#859900"}
           },
           dayfox = {
             ['@punctuation.bracket'] = {fg='#ce0000', style='bold'},
             ['@function'] = {fg='#2d57af', style='bold'},
-            CursorLine = {bg='#f1f3f6'}
+            CursorLine = {bg='#f1f3f6'},
+            MatchParen = {style='reverse'}
           }
         },
       });
