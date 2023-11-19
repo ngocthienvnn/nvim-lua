@@ -42,11 +42,13 @@ keymap("n", "vv", "<C-w>v", opts)
 keymap("n", "ss", "<C-w>s", opts)
 
 -- Move cursor to end of line
-keymap('i', '<C-\'>', '<Esc>A', { noremap = true, silent = true })
-keymap('n', '<C-\'>', '<Esc>A', { noremap = true, silent = true })
 
-keymap('i', '<C-;>', '<Esc>I', { noremap = true, silent = true })
-keymap('n', '<C-;>', '<Esc>I', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-\'>', '<Right><Right><Space>', { noremap = true, silent = true })
+-- keymap('i', '<C-\'>', '<Esc>A', { noremap = true, silent = true })
+-- keymap('n', '<C-\'>', '<Esc>A', { noremap = true, silent = true })
+--
+-- keymap('i', '<C-;>', '<Esc>I', { noremap = true, silent = true })
+-- keymap('n', '<C-;>', '<Esc>I', { noremap = true, silent = true })
 
 
 -- fzf lua
