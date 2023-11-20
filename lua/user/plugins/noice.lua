@@ -25,5 +25,8 @@ return {
         },
       },
     })
+    vim.keymap.set("n", "<ESC>", function()
+      require("noice").cmd("dismiss")
+    end)
   end
 }
