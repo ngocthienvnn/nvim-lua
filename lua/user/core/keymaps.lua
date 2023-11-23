@@ -45,7 +45,9 @@ keymap("n", "ss", "<C-w>s", opts)
 vim.api.nvim_set_keymap('i', '<C-\'>', '<Right><Right><Space>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-\'>', '<Right><Right><Space>', { noremap = true, silent = true })
 
--- Close window
+-- Close quickfix window
+keymap("n", "qq", ":cclose<CR>", opts)
+
 local map = function(mode, lhs, rhs, optss)
   vim.tbl_deep_extend("force", { silent = true, noremap = true }, optss)
   vim.keymap.set(mode, lhs, rhs, optss)
@@ -56,4 +58,4 @@ map("n", "e", "<CMD>call search('\\>')<CR>", { desc = "Next end of word" })
 map("n", "ge", "<CMD>call search('\\>', 'b')<CR>", { desc = "Previous end of word" })
 map("n", "w", "<CMD>call search('\\<')<CR>", { desc = "Next word" })
 map("n", "{", "<CMD>call search('\\(\\n\\n\\|\\%^\\)\\s*\\zs\\S', 'b')<CR>", { desc = "Previous start of paragraph" })
-map("n", "}", "<CMD>call search('\\n\\n\\s*\\zs\\S')<CR>", { desc = "Next start of paragraph" })vim.keymap.set('n', 'qq', vim.cmd.quit)
+map("n", "}", "<CMD>call search('\\n\\n\\s*\\zs\\S')<CR>", { desc = "Next start of paragraph" })
