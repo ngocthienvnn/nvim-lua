@@ -42,8 +42,9 @@ keymap("n", "vv", "<C-w>v", opts)
 keymap("n", "ss", "<C-w>s", opts)
 
 -- Move cursor to end of line
-vim.api.nvim_set_keymap('i', '<C-\'>', '<Right><Right><Space>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-\'>', '<Right><Right><Space>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-\'>', '<Right><Right>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-\'>', '<Right><Right>', { noremap = true, silent = true })
+
 
 -- Close quickfix window
 keymap("n", "qq", ":cclose<CR>", opts)
