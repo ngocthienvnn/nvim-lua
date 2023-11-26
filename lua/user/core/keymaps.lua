@@ -49,3 +49,7 @@ vim.api.nvim_set_keymap('n', '<C-\'>', '<Right><Right>', { noremap = true, silen
 -- Close quickfix window
 keymap("n", "qq", ":cclose<CR>", opts)
 
+-- Close window
+keymap("n", "qw", ":write<CR>", opts)
+keymap('n', 'qe', ':wq<CR>', opts)
+
