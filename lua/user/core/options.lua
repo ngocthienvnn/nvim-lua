@@ -35,6 +35,7 @@ local options = {
   }
 
   vim.opt.shortmess:append "c"
+  vim.g.skip_ts_context_commentstring_module = true
 
   for k, v in pairs(options) do
     vim.opt[k] = v
