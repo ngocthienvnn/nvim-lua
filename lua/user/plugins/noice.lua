@@ -24,6 +24,7 @@ return {
               { find = '; before #%d+' },
               { find = '%d fewer lines' },
               { find = '%d more lines' },
+              { find = '%d lines indented' },
             },
           },
           opts = { skip = true },
