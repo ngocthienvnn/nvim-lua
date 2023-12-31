@@ -27,7 +27,7 @@ return { "EdenEast/nightfox.nvim",
             ['@punctuation.bracket'] = {fg='#ce4c57', style="bold"},
             ['@variable'] = {fg='#d6d0bf'},
             CursorLine = {bg='#161f2b'},
-            MatchParen = {style="reverse", fg="#859900"}
+            MatchParen = {style="bold", fg="#fea837", bg='none'}
           },
           dayfox = {
             ['@punctuation.bracket'] = {fg='#ce0000', style='bold'},
