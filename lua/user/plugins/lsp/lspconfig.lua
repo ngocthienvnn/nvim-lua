@@ -25,7 +25,7 @@ return {
       keymap.set('n', 'K', vim.lsp.buf.hover, opts)
       keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations      
       keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
-      keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+      -- keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
       keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
       keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
       keymap.set('n', '<space>wl', function()
